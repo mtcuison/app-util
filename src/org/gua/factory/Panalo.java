@@ -1,6 +1,6 @@
 package org.gua.factory;
 
-import org.gua.connect.NewAccount;
+import org.gua.connect.panalo.NewAccount;
 
 public class Panalo {
     public enum Type{
