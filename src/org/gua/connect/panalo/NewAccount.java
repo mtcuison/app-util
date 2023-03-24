@@ -1,4 +1,4 @@
-package org.gua.connect;
+package org.gua.connect.panalo;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
