@@ -8,6 +8,10 @@ import org.gua.circle.panalo.MPSalesAcc;
 import org.gua.circle.panalo.OfficialReceipt;
 import org.gua.circle.panalo.ProvisionaryReceipt;
 import org.gua.circle.panalo.SPSales;
+import org.gua.circle.panalo.PanaloRaffle;
+import org.gua.circle.panalo.PanaloWinners;
+import org.gua.circle.panalo.RaffleNotificationEnd;
+import org.gua.circle.panalo.RaffleNotificationStart;
 
 public class ILoveMyJob {
     public enum Type{
@@ -18,7 +22,11 @@ public class ILoveMyJob {
         MC_SALES,
         SP_SALES,
         MP_SALES,
-        MP_SALES_ACC
+        MP_SALES_ACC,
+        RAFFLE_DATE,
+        RAFFLE_WINNER,
+        RAFFLE_START,
+        RAFFLE_END,
     }
     
     public static ILoveMyJobValidator make(Type foType){
@@ -39,6 +47,14 @@ public class ILoveMyJob {
                 return new MPSales();
             case MP_SALES_ACC:
                 return new MPSalesAcc();
+            case RAFFLE_DATE:
+                return new PanaloRaffle();
+            case RAFFLE_WINNER:
+                return new PanaloWinners();
+            case RAFFLE_START:
+                return new RaffleNotificationStart();
+            case RAFFLE_END:
+                return new RaffleNotificationEnd();
             default:
                 return null;
         }
