@@ -100,7 +100,7 @@ public class NewAccount implements UtilityValidator{
                         " LEFT JOIN G_Card_App_User_Device c" + 
                             " LEFT JOIN G_Card_Master d" + 
                             " ON c.sGCardNox = d.sGCardNox" +
-                            " LEFT JOIN Guanzon_Apps_Panalo f" + 
+                        " LEFT JOIN Guanzon_Apps_Panalo f" + 
                             " ON c.sUserIDxx = f.sUserIDxx" +
 				" AND f.sPanaloCD = " + SQLUtil.toSQL(_code) +
 				" AND f.sSourceCd = 'MCSO'" +
